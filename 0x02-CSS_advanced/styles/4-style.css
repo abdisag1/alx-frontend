@@ -6,8 +6,8 @@
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: color-black;
-    --font-family-base: Helvetica Neue;
-    --font-family-title: Arial:
+    --font-family-base: "Helvetica Neue" Helvetica, Arial, sans-serif;
+    --font-family-title: "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    color: text-color;
+    color: var(--text-color);
     font-family: var(--font-family-base);
 
 }
@@ -30,7 +30,7 @@ h5 {
 }
 
 a {
-    color: #161616;
+    color: var(--text-color);
 }
 
 .visually-hidden {
