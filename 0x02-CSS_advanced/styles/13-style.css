@@ -1,4 +1,4 @@
-/* task 10 */
+/* task 12 */
 :root {
     /* colors */
     --color-primary: #d73953;
@@ -45,12 +45,7 @@ body {
     line-height: var(--line-height-base);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+section :is(h1, h2, h3, h4, h5, h6) {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
 }
@@ -59,13 +54,16 @@ a:link {
     background-color: var(--text-color);
     text-decoration: none;
 }
+
 a:visited {
-    font-size: italic;
+    font-style: italic;
 }
+
 a:hover {
     text-decoration: underline;
 }
-a.active {
+
+a:active {
     background-color: var(--color-light-grey);
 }
 
@@ -80,10 +78,11 @@ a.active {
 .section-header {
     text-align: var(--section-header-align);
 }
+
 .section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(font-weight-bold);
     margin: var(--section-title-margin);
     color: var(--section-title-color);
 }
