@@ -14,12 +14,12 @@ html {
 }
 
 body {
-    color: text-color;
+    color: var(--text-color);
 
 }
 
 a {
-    color: #161616;
+    color: var(--text-color);
 }
 
 .visually-hidden {
