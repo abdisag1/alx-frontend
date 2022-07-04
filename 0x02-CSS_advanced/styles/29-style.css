@@ -10,7 +10,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
     line-height: 1.15;
     /* 1 */
     -webkit-text-size-adjust: 100%;
@@ -429,7 +429,7 @@ template {
     --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-primary);
+    --nav-item-link-hover: var(--color-white);
     /* button properties*/
     --button-display: inline-block;
     --button-padding: 1.5rem 3rem;
@@ -575,11 +575,26 @@ a:active {
 
 .nav .navlink {
     display: block;
-    padding: 0 0 3rem 0;
+    padding: 0.5rem 1rem;
 }
 
 .nav .nav-item-link-hover {
     color: var(--nav-item-link-hover);
+}
+
+.nav .nav-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    width: 0;
+    height: 0.2rem;
+}
+
+.nav .nav-item:hover .nav-link::before {
+    background-color: var(--color-primary);
+    width: 100%;
 }
 
 ul.row {
