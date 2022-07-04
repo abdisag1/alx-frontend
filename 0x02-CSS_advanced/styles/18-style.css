@@ -542,7 +542,7 @@ a:active {
 
 .nav .navlink {
   display: block;
-  padding: 0 0 3rem 0;
+  padding: 0.5rem 1rem;
 }
 
 .nav .nav-item-link-hover {
